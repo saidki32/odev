@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google!</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .logo-section {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .beta-text {
+            color: #666;
+            font-size: 14px;
+            margin-top: -5px;
+        }
+
+        .search-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .search-text {
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        .search-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-input {
+            width: 400px;
+            height: 40px;
+            border: 1px solid #ccc;
+            padding: 0 10px;
+            font-size: 16px;
+            border-radius: 2px;
+        }
+
+        .search-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .search-btn {
+            padding: 8px 16px;
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #3c4043;
+            font-size: 14px;
+            cursor: pointer;
+            border-radius: 2px;
+        }
+
+        .search-btn:hover {
+            background-color: #f1f3f4;
+            border-color: #dadce0;
+        }
+
+        .footer {
+            background-color: #e8f5e8;
+            border-top: 1px solid #ccc;
+            padding: 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .footer-section {
+            text-align: center;
+        }
+
+        .footer-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .footer-section a {
+            color: #1a0dab;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .footer-section a:hover {
+            text-decoration: underline;
+        }
+
+        .email-section {
+            text-align: center;
+        }
+
+        .email-input {
+            width: 200px;
+            height: 30px;
+            border: 1px solid #ccc;
+            padding: 0 8px;
+            font-size: 14px;
+            margin: 10px 0;
+            border-radius: 2px;
+        }
+
+        .subscribe-btn {
+            padding: 6px 12px;
+            background-color: #f8f9fa;
+            border: 1px solid #dadce0;
+            color: #3c4043;
+            font-size: 12px;
+            cursor: pointer;
+            border-radius: 2px;
+            margin-right: 10px;
+        }
+
+        .subscribe-btn:hover {
+            background-color: #f1f3f4;
+        }
+
+        .archive-link {
+            color: #1a0dab;
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .archive-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .search-input {
+                width: 300px;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-section">
+            <img src="google.jpg" alt="Google!" class="logo">
+            <div class="beta-text">BETA</div>
+        </div>
+
+        <div class="search-section">
+            <div class="search-text">Search the web using Google!</div>
+            <form class="search-form">
+                <input type="text" class="search-input" placeholder="Enter your search query">
+                <div class="search-buttons">
+                    <button type="submit" class="search-btn">Google Search</button>
+                    <button type="button" class="search-btn">I'm feeling lucky</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Special Searches</h3>
+                <a href="#">Stanford Search</a>
+                <a href="#">Linux Search</a>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Information</h3>
+                <a href="#">Help!</a>
+                <a href="#">About Google!</a>
+                <a href="#">Company Info</a>
+                <a href="#">Google! Logos</a>
+            </div>
+            
+            <div class="footer-section">
+                <div class="email-section">
+                    <h3>Get Google!</h3>
+                    <div>updates monthly:</div>
+                    <input type="email" class="email-input" placeholder="your e-mail">
+                    <div>
+                        <button class="subscribe-btn">Subscribe</button>
+                        <a href="#" class="archive-link">Archive</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
